@@ -23,7 +23,11 @@ export const config: VendureConfig = {
     plugins: [
         AdminUiPlugin.init({
             route: 'admin',
-            port: 3002,
+            port: Number(process.env.PORT) || 3000, // Use the SAME port as the API
+            app: {
+                // This tells it to build into the dist folder
+                path: path.join(__dirname, '../admin-ui'),
+            },
         }),
     ],
 };
