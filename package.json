@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
     "start": "node dist/index.js"
   },
   "dependencies": {
     "@vendure/core": "^2.2.0",
     "@vendure/admin-ui-plugin": "^2.2.0",
+    "graphql": "^16.8.1",
     "mysql2": "^3.9.0",
+    "rimraf": "^5.0.5",
     "typescript": "^5.3.0"
   }
 }
