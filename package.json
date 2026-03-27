@@ -1,0 +1,17 @@
+{
+  "name": "reinelle-empire-backend",
+  "version": "1.0.0",
+  "description": "Vendure backend for Hostinger",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@vendure/core": "^2.2.0",
+    "@vendure/admin-ui-plugin": "^2.2.0",
+    "mysql2": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
