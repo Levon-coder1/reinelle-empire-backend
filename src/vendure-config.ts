@@ -24,9 +24,9 @@ export const config: VendureConfig = {
         AdminUiPlugin.init({
             route: 'admin',
             port: Number(process.env.PORT) || 3000, // Use the SAME port as the API
-            app: {
-                // This tells it to build into the dist folder
-                path: path.join(__dirname, '../admin-ui'),
+           adminUiConfig: {
+                apiHost: 'http://localhost', // Or your domain
+                apiPort: 3000,
             },
         }),
     ],
