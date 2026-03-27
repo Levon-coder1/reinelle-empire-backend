@@ -6,7 +6,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "tsc",
     "start": "node dist/src/index.js"
   },
   "dependencies": {
